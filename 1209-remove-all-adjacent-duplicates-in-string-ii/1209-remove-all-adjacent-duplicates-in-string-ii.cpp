@@ -17,6 +17,7 @@ public:
         while(!st.empty()){
             while(st.top().second--){
                 ans += st.top().first;
+                //ans = st.top().first + ans; // Memory Limit Exceeded
             }
             st.pop();
         }
